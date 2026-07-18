@@ -9,3 +9,8 @@ Thumbs.db
 
 # 图片备份文件
 *.bak
+
+# 临时渲染脚本与预览产物
+_render.py
+_*.py
+preview/
