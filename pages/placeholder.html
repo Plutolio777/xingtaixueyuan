@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>栏目占位页</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: linear-gradient(160deg, #eef4ff 0%, #f7f0ff 100%); color: #333; padding: 24px; }
+  .card { background: #fff; border-radius: 16px; padding: 40px 28px; max-width: 420px; width: 100%;
+    box-shadow: 0 8px 30px rgba(80,90,160,.12); text-align: center; }
+  .icon { width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 18px;
+    background: linear-gradient(135deg, #6a8bff, #9a6cff); display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 30px; }
+  h1 { font-size: 20px; margin-bottom: 8px; }
+  .name { color: #6a6fff; font-weight: 600; }
+  p { color: #888; font-size: 14px; line-height: 1.7; margin-top: 12px; }
+  .orig { margin-top: 20px; font-size: 12px; color: #aaa; word-break: break-all; }
+  .back { display: inline-block; margin-top: 26px; padding: 10px 26px; border-radius: 24px;
+    background: linear-gradient(135deg, #6a8bff, #9a6cff); color: #fff; text-decoration: none; font-size: 14px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">&#128196;</div>
+    <h1>栏目：<span class="name" id="name">-</span></h1>
+    <p>这是本地占位页。<br>此栏目内容尚未接入，可在此填入你自己的页面地址。</p>
+    <div class="orig" id="orig"></div>
+    <a class="back" href="../index.html">返回首页</a>
+  </div>
+<script>
+  var q = new URLSearchParams(location.search);
+  var name = q.get("name") || "未命名栏目";
+  var id = q.get("id") || "";
+  document.getElementById("name").textContent = name;
+  document.title = name + " - 占位页";
+  if (id) document.getElementById("orig").textContent = "栏目编号 #" + id + "（原始链接见 links.json）";
+</script>
+</body>
+</html>
