@@ -6,3 +6,6 @@ _verify_*.png
 node_modules/
 .DS_Store
 Thumbs.db
+
+# 图片备份文件
+*.bak
