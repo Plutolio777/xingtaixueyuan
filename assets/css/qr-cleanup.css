@@ -1,0 +1,2 @@
+/* 移除非邢台学院的二维码图片区域。 */
+.img-wrap { display: none !important; }
