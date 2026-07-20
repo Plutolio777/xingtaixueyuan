@@ -1,0 +1,190 @@
+/* 首页底部：校园墙入口与辅助信息 */
+.home-bottom-wall {
+  margin: .55rem .68rem .8rem;
+}
+
+.home-bottom-wall a {
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: .42rem;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.home-bottom-wall a:active {
+  transform: scale(.985);
+}
+
+.home-bottom-wall .wall-primary a {
+  padding: .85rem 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #256fcb, #1754a4);
+  box-shadow: 0 .2rem .65rem rgba(31, 91, 168, .2);
+}
+
+.home-bottom-wall .wall-primary a::before {
+  content: "校园交流 · 信息共享";
+  display: block;
+  margin-bottom: .18rem;
+  font-size: .5rem;
+  letter-spacing: .08rem;
+  opacity: .8;
+}
+
+.home-bottom-wall .wall-primary a p,
+.home-bottom-wall .wall-join a p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.home-bottom-wall .wall-primary a p {
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.home-bottom-wall .wall-join {
+  margin-top: .45rem;
+}
+
+.home-bottom-wall .wall-join a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .62rem .85rem;
+  color: #214f8e;
+  background: #edf4ff;
+  border: 1px solid #d8e7fb;
+}
+
+.home-bottom-wall .wall-join a::after {
+  content: "›";
+  flex: 0 0 auto;
+  margin-left: .5rem;
+  color: #3678c9;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.home-bottom-wall .wall-join a p {
+  font-size: .62rem;
+  font-weight: 600;
+}
+
+.home-bottom-info {
+  margin: 0 .68rem .9rem;
+  padding-top: .62rem;
+  border-top: 1px solid #e8edf4;
+}
+
+.home-bottom-info > section {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .45rem;
+}
+
+.home-bottom-info .stylelib-list-item {
+  width: auto !important;
+  padding: 0 !important;
+}
+
+.home-bottom-info .stylelib-list-item a {
+  height: 100%;
+  padding: .58rem .65rem !important;
+  color: #64748b;
+  text-align: center;
+  text-decoration: none;
+  background: #f7f9fc;
+  border: 1px solid #edf1f6;
+  border-radius: .32rem;
+}
+
+.home-bottom-info .stylelib-list-item a p {
+  margin: .12rem 0;
+  line-height: 1.45;
+}
+
+.home-bottom-info .stylelib-list-item a p:first-child {
+  color: #334155;
+  font-size: .62rem;
+  font-weight: 700;
+}
+
+.home-bottom-info .stylelib-list-item a p + p {
+  color: #94a3b8;
+  font-size: .5rem;
+}
+
+@media (min-width: 700px) {
+  .home-bottom-wall,
+  .home-bottom-info {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 由原站导出的首页结构没有语义 class，使用入口链接定位底部模块。 */
+a[href*="id=15"] {
+  margin: .55rem .68rem .8rem;
+  padding: .85rem 1rem !important;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: .42rem;
+  background: linear-gradient(135deg, #256fcb, #1754a4) !important;
+  box-shadow: 0 .2rem .65rem rgba(31, 91, 168, .2);
+}
+
+a[href*="id=15"]::before {
+  content: "校园交流 · 信息共享";
+  display: block;
+  margin-bottom: .18rem;
+  font-size: .5rem;
+  letter-spacing: .08rem;
+  opacity: .8;
+}
+
+a[href*="id=15"] p { margin: 0; font-size: .78rem; font-weight: 700; line-height: 1.55; }
+
+a[href*="id=16"] {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 .68rem .8rem;
+  padding: .62rem .85rem !important;
+  color: #214f8e !important;
+  text-decoration: none;
+  background: #edf4ff !important;
+  border: 1px solid #d8e7fb;
+  border-radius: .42rem;
+}
+
+a[href*="id=16"]::after { content: "›"; margin-left: .5rem; color: #3678c9; font-size: 1.1rem; line-height: 1; }
+a[href*="id=16"] p { margin: 0; font-size: .62rem; font-weight: 600; line-height: 1.55; }
+
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) {
+  margin: 0 .68rem .9rem;
+  padding-top: .62rem;
+  border-top: 1px solid #e8edf4;
+}
+
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) > section:not(.x-vipIcon) {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .45rem;
+}
+
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item { width: auto !important; padding: 0 !important; }
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item a {
+  height: 100%;
+  padding: .58rem .65rem !important;
+  color: #64748b;
+  text-align: center;
+  text-decoration: none;
+  background: #f7f9fc !important;
+  border: 1px solid #edf1f6;
+  border-radius: .32rem;
+}
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item a > section:first-child > section:first-child { display: none !important; }
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item a p { margin: .12rem 0; line-height: 1.45; }
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item a p:first-child { color: #334155 !important; font-size: .62rem; font-weight: 700; }
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item a p + p { color: #94a3b8 !important; font-size: .5rem; }
