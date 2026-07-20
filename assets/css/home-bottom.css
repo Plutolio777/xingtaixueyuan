@@ -167,7 +167,7 @@ a[href*="id=16"] p { margin: 0; font-size: .62rem; font-weight: 600; line-height
   border-top: 1px solid #e8edf4;
 }
 
-.stylelib-wrapper:has(a[href="pages/col_17.html"]) > section:not(.x-vipIcon) {
+.stylelib-wrapper:has(a[href="pages/col_17.html"]) > section:not(.x-vipIcon) > section {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: .45rem;
@@ -188,3 +188,72 @@ a[href*="id=16"] p { margin: 0; font-size: .62rem; font-weight: 600; line-height
 .stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item a p { margin: .12rem 0; line-height: 1.45; }
 .stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item a p:first-child { color: #334155 !important; font-size: .62rem; font-weight: 700; }
 .stylelib-wrapper:has(a[href="pages/col_17.html"]) .stylelib-list-item a p + p { color: #94a3b8 !important; font-size: .5rem; }
+
+/* 移除草料原站遗留的分享工具栏和固定校园墙宣传条。 */
+.code-bottom-normal-actions-wrapper,
+.fixedBottomContainerWrapper,
+.fixedBottomContainerPlaceholder {
+  display: none !important;
+}
+
+/* 学校地址：覆盖失效的原站 scoped 样式。 */
+.address.normal-card {
+  margin: 0 22px 22px !important;
+}
+
+.address.normal-card .simple-card {
+  display: grid !important;
+  grid-template-columns: 72px minmax(0, 1fr) !important;
+  align-items: center !important;
+  min-height: 96px !important;
+  padding: 12px !important;
+  overflow: hidden !important;
+  color: #1f2937 !important;
+  background: #f7faff !important;
+  border: 1px solid #dce8f7 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 6px 18px rgba(31, 91, 168, .08) !important;
+}
+
+.address.normal-card .diagram {
+  display: block !important;
+  width: 72px !important;
+  height: 72px !important;
+  margin: 0 !important;
+  object-fit: cover !important;
+  border-radius: 6px !important;
+}
+
+.address.normal-card .content {
+  min-width: 0 !important;
+  padding-left: 14px !important;
+}
+
+.address.normal-card .header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+  margin: 0 0 7px !important;
+}
+
+.address.normal-card .title {
+  min-width: 0 !important;
+  color: #1e3a5f !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+}
+
+.address.normal-card .detail {
+  color: #64748b !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  overflow-wrap: anywhere !important;
+}
+
+.address.normal-card .anticon-cli-angle-right {
+  flex: 0 0 auto !important;
+  color: #7c91aa !important;
+  font-size: 16px !important;
+}
