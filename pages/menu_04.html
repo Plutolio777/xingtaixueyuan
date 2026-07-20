@@ -2,44 +2,349 @@
 <html lang="zh-CN"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>中国电信校园卡 · 邢台学院新生必备手册</title>
-<meta property="og:title" content="中国电信校园卡 · 邢台学院新生必备手册">
+<title>2026电信校园尊享卡 - 邢台学院新生必备手册</title>
+<meta property="og:title" content="2026电信校园尊享卡 - 邢台学院新生必备手册">
 <link rel="stylesheet" href="menu-style.css">
+<style>
+/* ====== 品质感增强 ====== */
+
+/* Hero */
+.premium-hero {
+  background: #0A1F44;
+  color: #fff;
+  padding: 28px 20px 36px;
+  position: relative;
+  overflow: hidden;
+}
+.premium-hero::after {
+  content: "";
+  position: absolute;
+  right: -40px; top: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.06);
+}
+.premium-hero .eyebrow {
+  font-size: 11px;
+  letter-spacing: .2em;
+  color: rgba(255,255,255,.5);
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+.premium-hero h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: .02em;
+}
+.premium-hero h2 span {
+  color: #C8960C;
+}
+.premium-hero .sub {
+  font-size: 13px;
+  color: rgba(255,255,255,.6);
+  margin: 10px 0 0;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+/* 数据条 */
+.stats-row {
+  display: flex;
+  gap: 1px;
+  margin: -16px 10px 0;
+  position: relative;
+  z-index: 2;
+}
+.stats-row .stat {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 8px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+.stats-row .stat .val {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0A1F44;
+  line-height: 1.1;
+}
+.stats-row .stat .lbl {
+  font-size: 11px;
+  color: #8899AA;
+  margin-top: 4px;
+}
+
+/* 内容区 */
+.wrap { max-width: 860px; margin: 24px auto 0; padding: 0 12px 40px; }
+
+/* 板块卡片 */
+.sec {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px 18px;
+  margin: 0 0 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+.sec-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #EEF1F5;
+}
+.sec-head .ico {
+  flex: 0 0 auto;
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  background: #F0F3F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.sec-head h2 {
+  font-size: 17px;
+  margin: 0;
+  color: #0A1F44;
+  font-weight: 600;
+}
+
+/* 权益条目 */
+.benefit-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #F5F6FA;
+}
+.benefit-item:last-child { border-bottom: none; }
+.benefit-item .bi-num {
+  font-size: 11px;
+  font-weight: 600;
+  color: #C8960C;
+  letter-spacing: .06em;
+  margin-bottom: 4px;
+}
+.benefit-item .bi-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1A1A2E;
+  line-height: 1.4;
+}
+.benefit-item .bi-desc {
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.7;
+  margin-top: 6px;
+}
+.benefit-item .bi-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.bi-tag.gold { background: #FDF6E3; color: #8B6914; }
+.bi-tag.blue { background: #EBF0FA; color: #0A1F44; }
+
+/* 抽奖奖励列表 */
+.prize-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0 0;
+}
+.prize-grid .pg-item {
+  background: #F8F9FB;
+  border-radius: 10px;
+  padding: 14px 12px;
+  text-align: center;
+}
+.pg-item .pg-rank {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8899AA;
+  letter-spacing: .06em;
+}
+.pg-item .pg-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1A2E;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+.pg-item.gold { background: #FDF8F0; border: 1px solid #F0E0C0; }
+.pg-item.gold .pg-rank { color: #C8960C; }
+.pg-item.gold .pg-name { color: #0A1F44; }
+
+/* 底部 */
+.foot-cta {
+  margin: 24px 0 36px;
+  text-align: center;
+}
+.foot-cta .cta-btn {
+  display: inline-block;
+  background: #0A1F44;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 36px;
+  border-radius: 24px;
+  letter-spacing: .04em;
+  transition: background .2s;
+}
+.foot-cta .cta-sub {
+  font-size: 12px;
+  color: #8899AA;
+  margin-top: 10px;
+}
+
+/* 顶部栏适配 */
+.telecom .topbar {
+  background: #0A1F44;
+  box-shadow: 0 1px 8px rgba(0,0,0,.15);
+}
+
+/* 响应式 */
+@media (max-width: 480px) {
+  .premium-hero h2 { font-size: 21px; }
+  .stats-row { margin-left: 4px; margin-right: 4px; }
+  .stats-row .stat { padding: 13px 6px; }
+  .stats-row .stat .val { font-size: 17px; }
+}
+</style>
 </head>
 <body class="telecom">
-<div class="topbar"><a class="back" href="../index.html">‹</a><h1>中国电信校园卡</h1></div>
-<div class="hero">
-  <p class="eyebrow">邢台学院 · 新生必备手册</p>
-  <h2 class="htitle">中国电信校园卡</h2>
-  <p class="hdesc">校园网 · 流量套餐 · 办卡指引（学校发放的电信运营商专栏）</p>
-<span class="badge-op">📡 学校发放 · 中国电信运营商专栏</span>
+
+<!-- 顶部导航 -->
+<div class="topbar">
+  <a class="back" href="../index.html">&#8249;</a>
+  <h1>2026 电信校园尊享卡</h1>
 </div>
+
+<!-- Hero -->
+<div class="premium-hero">
+  <p class="eyebrow">Xingtai University · 2026</p>
+  <h2>邢台学院新生<span>专属通信方案</span></h2>
+  <p class="sub">千兆宿舍宽带 / 全校 WiFi 覆盖 / 39 元月租 / 200G 全国流量<br>十四重新生权益，入学一步到位</p>
+</div>
+
+<!-- 关键数据 -->
+<div class="stats-row">
+  <div class="stat"><div class="val">39&#x5143;</div><div class="lbl">月租</div></div>
+  <div class="stat"><div class="val">200G</div><div class="lbl">全国流量</div></div>
+  <div class="stat"><div class="val">200&#x5206;&#x949F;</div><div class="lbl">免费通话</div></div>
+  <div class="stat"><div class="val">&#x5343;&#x5146;</div><div class="lbl">宿舍宽带</div></div>
+</div>
+
+<!-- 正文 -->
 <div class="wrap">
 
-<div class="sec" id="s0"><div class="sec-head"><span class="ico">📶</span><h2>为什么要办电信校园卡？</h2></div>
-<ol>
-<li>电信校园卡套餐流量充足，办理即赠送免费校园宽带（宽带需电信校园卡账号登录使用）</li>
-<li>教务系统、车辆管理系统、校内各类线上平台，均需连接校园网才可正常登录使用</li>
-<li>校内电信 WiFi 免费使用，宿舍配备有线网线接口，上网稳定流畅</li>
-<li>可顺畅访问学校采购的各类学术数据库，方便查阅知网等文献资源（也可搭配校园 VPN 使用）</li>
-<li>本科教务系统抢课时，校园网 + 电脑对比非校园网手机端优势明显，登录选课系统速度更快、延迟更低、不易卡顿掉线</li>
-</ol>
-<p>覆盖范围</p>
-<p>全校教学楼、图书馆、宿舍、食堂、体育馆等全部区域实现电信无线网络全覆盖，每间宿舍同步配备有线网络接口。</p>
-<p>校园网：高速稳定电信校园 Wi-Fi，办公楼、教学区全区域覆盖！（网速实际体验会受时段、地点、设备影响略有差异）</p>
-<div class="callout danger"><span class="ci">❗</span><span class="ctitle">划重点</span>学校不会强制大家办理任意运营商电话卡，无硬性规定！</div>
-<p>如果开学有人谎称：不办对应电话卡就没法连校园网、不能选课……</p>
-<p>这里说明清楚：校内学习、选课所需校园网，仅支持电信校园卡账号登录；有上网需求随时办理即可。</p>
-<p>暑假如何线上办理电信校园卡？</p>
-<p>不少新生会遇到开学季学长学姐线下推销，目的性较强容易让人抵触，不想线下周旋的同学可以走校园正规渠道！</p>
-<p>校园论坛与中国电信官方合作，渠道正规有保障，无套路隐形消费</p>
-<p>有疑问可添加电信小助手微信咨询办理</p>
-<p>为什么选择中国电信校园卡？</p>
-<p>校园卡套餐：</p>
-<p>39 元月租包含 200G 全国通用流量＋200 分钟国内通话＋免费校园宽带</p>
-<p>各类视频会员、生活福利等权益活动持续更新上线……</p>
-<p>综合评估：</p>
-<p>综合 23、24、25 届在校学长学姐真实反馈，校内电信校园卡基站覆盖完善，信号与网速表现最优</p></div>
-<div class="foot">邢台学院新生必备手册<br><a class="home" href="../index.html">返回首页</a></div>
+  <!-- 一、核心通信权益 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="ico">&#x1F4E1;</span>
+      <h2>核心通信网络权益</h2>
+    </div>
+
+    <div class="benefit-item">
+      <div class="bi-num">01</div>
+      <div class="bi-title">独家全域智慧校园网络</div>
+      <div class="bi-desc">本校专属配套千兆宿舍有线宽带，搭配全校全覆盖高速校园 WiFi。教学楼、图书馆、宿舍区域信号稳定无死角，线上选课、文献检索、网课实训、影音娱乐、电竞游戏均可低延迟流畅运行，是在校学习生活刚需通信配套。</div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="bi-num">02</div>
+      <div class="bi-title">高性价比通信资费</div>
+      <div class="bi-desc">月租仅 <span class="bi-tag blue">39 元</span>，内含 200G 全国高速通用流量 + 200 分钟全国免费通话。寒暑假返乡、外出实习无漫游限制，流量通话充足无压力。</div>
+    </div>
+  </div>
+
+  <!-- 二、生活文娱福利 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="ico">&#x1F381;</span>
+      <h2>全场景生活文娱福利</h2>
+    </div>
+
+    <div class="benefit-item">
+      <div class="bi-num">03</div>
+      <div class="bi-title">多元影音出行消费权益</div>
+      <div class="bi-desc">每月免费申领各大影视平台会员、主流音乐平台 VIP，同步发放打车、外卖专属优惠券。平台常态化追加外卖福利券，覆盖课余观影、听歌、出行、就餐全场景消费。</div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="bi-num">04</div>
+      <div class="bi-title">一站式入学实物臻礼 <span class="bi-tag gold">线下办理即享</span></div>
+      <div class="bi-desc">院校主题精美文创礼品一份，兼具纪念意义与实用价值；时令精品鲜切果礼一份；多品类全套生活用品大礼包自由挑选，入学刚需好物一站式配齐。活动前 <strong>500 名</strong>办卡用户额外解锁限定神秘重磅礼包，名额有限先到先得。</div>
+    </div>
+  </div>
+
+  <!-- 三、增值服务 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="ico">&#x1F91D;</span>
+      <h2>长期配套增值服务</h2>
+    </div>
+
+    <div class="benefit-item">
+      <div class="bi-num">05</div>
+      <div class="bi-title">一对一专属售后保障</div>
+      <div class="bi-desc">配备专属售后人员全程对接，宽带故障维修、套餐业务变更、流量话费咨询均可快速响应，无需往返校外营业厅，售后高效省心。</div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="bi-num">06</div>
+      <div class="bi-title">常态化校园福利活动</div>
+      <div class="bi-desc">校内定期举办主题互动活动，参与活动即可抽取丰厚实物奖品，丰富课余校园生活。</div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="bi-num">07</div>
+      <div class="bi-title">碎片化校内增收渠道</div>
+      <div class="bi-desc">开放线上、线下双模式校内兼职岗位，利用课余零散时间即可参与，工作强度轻松，适配学生增收需求。</div>
+    </div>
+  </div>
+
+  <!-- 四、开学限定抽奖 -->
+  <div class="sec">
+    <div class="sec-head">
+      <span class="ico">&#x1F3B0;</span>
+      <h2>开学限定抽奖活动 <span class="bi-tag gold">100% 中奖</span></h2>
+    </div>
+    <p style="font-size:13px;color:#6B7280;margin:0 0 13px;">开学首周内成功办理本校园卡，可免费参与一次抽奖：</p>
+
+    <div class="prize-grid">
+      <div class="pg-item gold">
+        <div class="pg-rank">一等奖</div>
+        <div class="pg-name">iPhone 17 Pro Max</div>
+      </div>
+      <div class="pg-item">
+        <div class="pg-rank">二等奖</div>
+        <div class="pg-name">大疆 Pocket 3</div>
+      </div>
+      <div class="pg-item">
+        <div class="pg-rank">三等奖</div>
+        <div class="pg-name">20 元美甲券 / 果切券</div>
+      </div>
+      <div class="pg-item">
+        <div class="pg-rank">优胜奖</div>
+        <div class="pg-name">袋装洗衣液</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部 CTA -->
+  <div class="foot-cta">
+    <a class="cta-btn" href="#">咨询办理电信校园卡</a>
+    <div class="cta-sub">前 500 名办卡额外解锁神秘礼包 · 先到先得</div>
+  </div>
+
+  <div class="foot">邢台学院新生必备手册<br><a class="home" href="../index.html">返回首页</a></div>
 </div>
+
 </body></html>
